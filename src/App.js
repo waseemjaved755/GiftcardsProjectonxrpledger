@@ -8,27 +8,35 @@ import React from "react";
 
 //import UserProfile from "./components/UserProfile";
 
-import Navbar from './components/Navbar';
+//import Navbar from './components/Navbar';
 
-import Hero from './components/HeroSection';
-import Categories from './components/Categories';
-import Footer from './components/Footer';
+//import Hero from './components/HeroSection';
+//import Categories from './components/Categories';
+//import Footer from './components/Footer';
+import {BrowserRouter as Router , Routes, Route} from 'react-router-dom';
+import Home from "./pages/Home";
+import Contact from "./components/Contact";
 
 
-class App extends React.Component
+function App ()
 {
-    render()
-    {
+    
+    
         return (
-        <div>
-           <Navbar />
-           <Hero />
-           <Categories />
-           <Footer /> 
+        <div className="App">
+           <Router>
+                 <Routes>
+
+                    <Route path="/" element={<Home />} />
+                    <Route path ="/contact"  element={<Contact />} />
+            </Routes>
+
+           A   
+           </Router>
         </div>
          
         );
-    }
+    
 }
 
 export default App;
