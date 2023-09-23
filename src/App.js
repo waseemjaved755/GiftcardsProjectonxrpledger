@@ -15,8 +15,8 @@ import React from "react";
 //import Footer from './components/Footer';
 import {BrowserRouter as Router , Routes, Route} from 'react-router-dom';
 import Home from "./pages/Home";
-import Contact from "./components/Contact";
-
+import Contac from "./components/Contact";
+import { WalletProvider } from "./components/WalletContext";
 
 function App ()
 {
@@ -24,15 +24,20 @@ function App ()
     
         return (
         <div className="App">
-           <Router>
+            <WalletProvider>
+
+            <Router>
                  <Routes>
 
                     <Route path="/" element={<Home />} />
-                    <Route path ="/contact"  element={<Contact />} />
-            </Routes>
-
-           A   
+                    <Route path="/home" element={<Home />} />
+                    <Route path ="/contact"  element={<Contac />} />
+                    <Route path="/services" element = {<h1> This is servicees page</h1>} />
+            </Routes>  
            </Router>
+           
+            </WalletProvider>
+          
         </div>
          
         );

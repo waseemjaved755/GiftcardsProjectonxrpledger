@@ -14,13 +14,13 @@ const Navbar = () => {
           </div>
           <ul className="flex space-x-6">
             <li className="text-white hover:text-blue-500 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out">
-              Home
+             <Link to="/home"> Home</Link>  
             </li>
             <li className="text-white hover:text-blue-500 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out">
-            Services
+            <Link to ="/services"> Services</Link>
             </li>
             <li className="text-white hover:text-blue-500 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out">
-              Contact
+            <Link to="/contact">Contact</Link> 
             </li>
           </ul>
         </div>
