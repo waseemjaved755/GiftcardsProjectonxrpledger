@@ -16,7 +16,6 @@ export function WalletProvider({ children }) {
     
     // web3 library to connect to a wallet
     // Upon successful connection, setWalletConnected(true)
-
     //After fetching from the API call I will set this setWalletConnected to True
 
   };

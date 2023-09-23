@@ -17,7 +17,7 @@ import {BrowserRouter as Router , Routes, Route} from 'react-router-dom';
 import Home from "./pages/Home";
 import Contac from "./components/Contact";
 import { WalletProvider } from "./components/WalletContext";
-
+import Services from "./components/Services";
 function App ()
 {
     
@@ -32,10 +32,10 @@ function App ()
                     <Route path="/" element={<Home />} />
                     <Route path="/home" element={<Home />} />
                     <Route path ="/contact"  element={<Contac />} />
-                    <Route path="/services" element = {<h1> This is servicees page</h1>} />
+                    <Route path="/services" element = {<Services />} />
             </Routes>  
            </Router>
-           
+
             </WalletProvider>
           
         </div>
