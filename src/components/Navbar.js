@@ -3,8 +3,9 @@ import React from 'react';
 import XUMMIntegration from './XUMMIntegration';
 import { Link } from 'react-router-dom';
 import Cart from './Cart';
+import {  } from 'flowbite-react';
 
-const Navbar = () => {
+const NavbarCom = () => {
   return (
     <nav className="bg-black py-4">
       <div className="container mx-auto flex items-center justify-between">
@@ -24,14 +25,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="flex-grow text-center">
-          {/* Search bar */}
-          <input
-            type="text"
-            placeholder="Search..."
-            className="w-72 px-2 py-1 border-2 border-gray-300 rounded-full focus:outline-none focus:border-blue-500"
-          />
-        </div>
+
         <div className="flex items-center space-x-6">
           <XUMMIntegration />
           <Cart />
@@ -41,4 +35,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarCom;

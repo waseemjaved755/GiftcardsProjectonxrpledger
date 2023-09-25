@@ -1,17 +1,16 @@
 import React from "react"; 
-import Navbar from "../components/Navbar";
+import NavbarCom from "../components/Navbar";
 import Hero from "../components/HeroSection";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
-//import XUMMIntegration from "../components/XUMMIntegration";
-
+//import XUMMIntegration from "../components/XUMMIntegration"
 function Home ()
 {
 
     return (
 
         <div>
-           <Navbar />
+           <NavbarCom />
            <Hero />
            <Categories />
            <Footer />

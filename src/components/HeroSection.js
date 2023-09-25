@@ -1,22 +1,32 @@
 // Hero.js
 import React from 'react';
 import backgroundImg from '../images/hero.jpg'; // Import your background image
-
+//import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
-    <section
-      className="bg-no-repeat bg-cover bg-center bg-fixed relative"
-      style={{ backgroundImage: `url(${backgroundImg})` }}
-    >
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50 blur-md"></div>
-      <div className="container mx-auto text-center relative z-10 py-24">
-        <h1 className="text-4xl font-bold text-white mb-4">Welcome to XRPVista</h1>
-        <p className="text-lg text-white mb-8">Your one-stop platform for buying gift cards with XRP.</p>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full">
-          Get Started
-        </button>
+    <section className="bg-purple-700 my-10">
+    <div className="px-6 py-12 text-center md:px-12 lg:text-left">
+      <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div className="mt-12 lg:mt-0">
+            <h1 className="mt-0 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl text-[hsl(0,0%,100%)]">
+              The best place <br /><span class="text-[hsl(61,90%,69%)]">to buy Gift Cards</span>
+            </h1>
+            
+           < button type="button" className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-7 py-2.5 text-center mr-2 mb-2"> Buy Now</button> 
+            
+           
+            
+            
+          </div>
+          <div className="mb-12 lg:mb-0">
+            <img src={backgroundImg}
+              className="w-full rounded-lg shadow-lg dark:shadow-black/20" alt="" />
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
   );
 };
 

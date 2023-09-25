@@ -15,9 +15,9 @@ import React from "react";
 //import Footer from './components/Footer';
 import {BrowserRouter as Router , Routes, Route} from 'react-router-dom';
 import Home from "./pages/Home";
-import Contac from "./components/Contact";
+import ContactPage from "./pages/ContactPage";
 import { WalletProvider } from "./components/WalletContext";
-import Services from "./components/Services";
+import ServicePage from "./pages/ServicesPage";
 function App ()
 {
     
@@ -31,8 +31,8 @@ function App ()
 
                     <Route path="/" element={<Home />} />
                     <Route path="/home" element={<Home />} />
-                    <Route path ="/contact"  element={<Contac />} />
-                    <Route path="/services" element = {<Services />} />
+                    <Route path ="/contact"  element={<ContactPage />} />
+                    <Route path="/services" element = {<ServicePage />} />
             </Routes>  
            </Router>
 
